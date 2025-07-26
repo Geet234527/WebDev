@@ -1,0 +1,151 @@
+:root {
+  --bg-light: #ffffff;
+  --bg-dark: #121212;
+  --text-light: #111111;
+  --text-dark: #ffffff;
+  --primary: #007BFF;
+  --card-light: #e6f0ff;
+  --card-dark: #1f1f1f;
+  --footer-light: #f2f2f2;
+  --footer-dark: #1a1a1a;
+  --table-border-dark: #444;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: all 0.3s ease;
+}
+
+.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: var(--card-light);
+  color: #111;
+  border-radius: 10px;
+}
+
+.dark .hero {
+  background-color: var(--card-dark);
+  color: var(--text-dark);
+}
+
+.main-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.main-btn:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.dark .main-btn {
+  background-color: var(--card-dark);
+  color: var(--text-dark);
+  border: 1px solid var(--primary);
+}
+
+.dark .main-btn:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  color: #111;
+}
+
+.dark table {
+  background-color: var(--card-dark);
+}
+
+.dark th, .dark td {
+  color: #fff;
+  border-bottom: 1px solid var(--table-border-dark);
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: var(--footer-light);
+  margin-top: 40px;
+  color: #111;
+}
+
+.dark footer {
+  background-color: var(--footer-dark);
+  color: #fff;
+}
+
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: #fff;
+  cursor: pointer;
+}
