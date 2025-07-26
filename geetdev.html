@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GeetDev Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <h2 class="logo">GeetDev</h2>
+      <ul class="nav-links">
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Tentang</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Welcome to GeetDev</h1>
+      <p>Clik tombol di bawah</p>
+      <button class="main-btn" onclick="showAlert()">Clik me</button>
+      <div id="output" class="random-output"></div>
+    </div>
+  </header>
+
+  <section class="content">
+    <div class="container">
+      <h2>Data Kehidupan</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nama</th>
+            <th>Umur</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Geet</td>
+            <td>16</td>
+            <td>Pelajar</td>
+          </tr>
+          <tr>
+            <td>Tristan</td>
+            <td>17</td>
+            <td>Teroris </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 by GeetDev. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+  <script src="script.js"></script>
+</body>
+</html>
